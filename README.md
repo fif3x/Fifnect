@@ -13,3 +13,14 @@ To use, you can either:
 3. Go to terminal, go to the directory that has all the `.json` files and the `.py` file and write `python fifnect.py`
 
 _Note: All the data will be saved in the `.json` files_
+
+# How to download?
+
+There are two ways to download
+
+1. Use `git`: Go to your terminal and type
+```
+git clone
+```
+
+2. By simply downloading through GitHub
