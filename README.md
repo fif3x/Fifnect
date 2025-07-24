@@ -20,7 +20,7 @@ There are two ways to download
 
 1. Use `git`: Go to your terminal and type
 ```
-git clone
+git clone --branch main https://github.com/fif3x/Fifnect.git
 ```
 
 2. By simply downloading through GitHub
