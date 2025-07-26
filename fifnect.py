@@ -20,10 +20,12 @@ def save_to_json(data_dict, filename):
 
 def print_list(title, key, data):
     print(f"{title}:")
-    print("-" * 30)
+    print("-" * 50)
     for item in data.get(key, []):
-        print(item.get("name", "No name"))
-    print("-" * 30)
+        name = item.get("name", "No name")
+        display_name = item.get("displayName", "No display name")
+        print(f"{name} (Display Name: {display_name})")
+    print("-" * 50)
 
 def main():
     user_id = input("Enter your userID: ")
@@ -47,8 +49,7 @@ def main():
     print()
     print_list("Friends", "friends", {"friends": friends})
     print_list("Mutuals", "mutuals", {"mutuals": mutuals})
-    print("\n Note: the lists are saved in `friends.json` and `mutuals.json` files")
+    print("\nNote: the lists are saved in `friends.json` and `mutuals.json` files")
 
 if __name__ == "__main__":
-    main()
-
+    main(
